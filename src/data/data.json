@@ -1,0 +1,91 @@
+{
+  "home": {
+    "installments": [
+      {
+        "value": 120,
+        "label": "120",
+        "selected": true
+      },
+      {
+        "value": 180,
+        "label": "180",
+        "selected": false
+      },
+      {
+        "value": 240,
+        "label": "240",
+        "selected": false
+      }
+    ],
+    "collateralRange": {
+      "type": "collateral",
+      "value": 20,
+      "step": 1,
+      "minimum": 50000,
+      "maximum": 100000000
+    },
+    "loanRange": {
+      "type": "loan",
+      "value": 90,
+      "step": 1,
+      "minimum": 30000,
+      "maximum": 4500000
+    }
+  },
+  "auto": {
+    "installments": [
+      {
+        "value": 24,
+        "label": "24",
+        "selected": true
+      },
+      {
+        "value": 36,
+        "label": "36",
+        "selected": false
+      },
+      {
+        "value": 48,
+        "label": "48",
+        "selected": false
+      }
+    ],
+    "collateralRange": {
+      "type": "collateral",
+      "step": 1,
+      "minimum": 5000,
+      "maximum": 3000000
+    },
+    "loanRange": {
+      "type": "loan",
+      "step": 1,
+      "minimum": 3000,
+      "maximum": 100000
+    }
+  },
+  "options": [
+    {
+      "label": "Home",
+      "value": "home",
+      "selected": false
+    },
+    {
+      "label": "Auto",
+      "value": "auto",
+      "selected": true
+    }
+  ],
+  "rules": {
+    "fft": "6.38",
+    "interestRate": "2.34",
+    "maxPercentageLoanAmount": "80"
+  },
+  "helpQuestions": [
+    {
+      "text": "Can you help me?"
+    },
+    {
+      "text": "How can I contact with you?"
+    }
+  ]
+}

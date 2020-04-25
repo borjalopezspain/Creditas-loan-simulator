@@ -1,0 +1,17 @@
+@import 'src/globalStyles/variables';
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  select {
+    width: 100%;
+    border:none;
+    appearance: none;
+    border: 1px solid $nobel;
+    background-color: $alabaster;
+    border-radius: 4px;
+    padding: 10px 5px;
+    color: $emperor;
+  }
+}

@@ -1,0 +1,11 @@
+@import 'src/globalStyles/variables';
+
+.footer {
+  min-height: $footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__text {
+    text-align: center;
+  }
+}

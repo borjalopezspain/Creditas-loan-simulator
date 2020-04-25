@@ -1,0 +1,65 @@
+@import 'src/globalStyles/variables';
+
+#modal-form-result {
+  .modal-container {
+    width: 60%;
+  }
+  .info-field {
+    margin-bottom: 25px;
+    .label {
+      font-weight: bold;
+      background: $nobel;
+      padding: 5px;
+      text-align: center;
+    }
+    .value {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+      text-transform: capitalize;
+      margin-top: 5px;
+    }
+  }
+  .result-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &__info {
+      text-align: center;
+      .label {
+        font-weight: bold;
+        font-size: 1.5rem;
+        background: $nobel;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+      .value {
+        font-weight: bold;
+        font-size: 3rem;
+        color: $mountain-meadow;
+      }
+    }
+  }
+  .user-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    input {
+      padding: 10px;
+      width: 50%;
+      border-radius: 5px;
+      border: 2px solid $mountain-meadow;
+      &.email-no-ok {
+        border: 2px solid $red;
+      }
+    }
+  }
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__button {
+      width: 20%;
+    }
+  }
+}

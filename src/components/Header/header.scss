@@ -1,0 +1,25 @@
+@import 'src/globalStyles/variables';
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: $header;
+  background-color: $mountain-meadow;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    &--logo {
+      cursor: pointer;
+      .logo {
+        display: block;
+        width: 160px;
+        height: 100%;
+      }
+    }
+  }
+}

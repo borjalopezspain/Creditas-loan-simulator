@@ -1,0 +1,21 @@
+{
+  "help": {
+    "question_0": {
+      "answer": "Yes sure! How can you help you?",
+      "link": ""
+    },
+    "question_1": {
+      "answer": "Here you will find a form to contact us.",
+      "link": "/contact"
+    }
+  },
+  "helpQuestions": [
+    {
+      "text": "Can you help me?"
+    },
+    {
+      "text": "How can I contact with you?"
+    }
+  ],
+  "loanRequest": []
+}

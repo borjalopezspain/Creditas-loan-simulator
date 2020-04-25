@@ -1,0 +1,30 @@
+@import 'src/globalStyles/variables';
+
+.form {
+  display: grid;
+  grid-template: none;
+  grid-template-columns: 0.6fr 0.4fr;
+  grid-column-gap: 50px;
+  &__fields {
+    display: grid;
+  }
+}
+
+.field-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .field {
+    width: 45%;
+  }
+}
+
+@media #{$tablet} {
+  .form {
+    grid-template: none;
+    &__result {
+      padding: 0 15%;
+      margin-top: 20px;
+    }
+  }
+}

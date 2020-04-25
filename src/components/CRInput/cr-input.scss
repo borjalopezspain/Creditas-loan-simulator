@@ -1,0 +1,19 @@
+@import 'src/globalStyles/variables';
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  input {
+    width: 100%;
+    border: 1px solid $nobel;
+    background-color: $alabaster;
+    border-radius: 4px;
+    padding: 10px 5px;
+    color: $emperor;
+    &.out-of-range {
+      border-color: red;
+    }
+  }
+}
+

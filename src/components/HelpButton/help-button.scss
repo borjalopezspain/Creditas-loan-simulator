@@ -1,0 +1,126 @@
+@import 'src/globalStyles/variables';
+
+.help-button {
+  .no-click {
+    pointer-events: none;
+  }
+  cursor: pointer;
+  text-decoration: none;
+  color: $concrete;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .questions-container {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto;
+    background: $white;
+    opacity: 0;
+    z-index: -2;
+    transition: 0.3s ease-in;
+    transform: translateY(-30px);
+    border-radius: 0 0 5px 5px;
+    min-width: 210px;
+    &.show-questions {
+      opacity: 1;
+      z-index: 2;
+      transform: translateY(0);
+      .question {
+        pointer-events: all;
+      }
+    }
+    .question {
+      pointer-events: none;
+      background: $mountain-meadow;
+      color: $white;
+      padding: 15px;
+      opacity: 0.8;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid $white;
+      }
+      &:last-child {
+        border-radius: 0 0 5px 5px;
+      }
+    }
+  }
+  .answer-container {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto;
+    background: $mountain-meadow;
+    opacity: 0;
+    z-index: -2;
+    transition: 0.3s ease-in;
+    transform: translateY(-30px);
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    min-width: 210px;
+    &.show-answer {
+      opacity: 1;
+      z-index: 2;
+      transform: translateY(0);
+    }
+    .answer {
+      color: $white;
+      .answer-text {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        color: $white;
+      }
+      .contact-link {
+        color: $white;
+        font-size: 1.5rem;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.help-loader-container {
+  position: absolute;
+  top: 5px;
+  right: -11px;
+  display: inline;
+}
+
+.loader {
+  position: relative;
+  width: 60px;
+  height: 80px;
+  display: inline-block;
+  & div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    &:nth-child(2) {
+      animation-delay: -0.5s;
+    }
+  }
+}
+
+@keyframes loader {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
